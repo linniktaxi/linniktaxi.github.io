@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Такси Радуга</title>
+	<meta name="description" content="Такси в Москве по самым низким ценам">
+	<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+	<link href="project/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="project/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<div>
+		<div class="head">
+			<div class="container center pad_bot10">
+				<div class="row">
+					<div class="col-xs-3 col-sm-2 col-md-2">
+						<a href="index.html"><img class="logo" src="project/images/logo1.png" alt='Логотип такси "Радуга"' title='Логотип такси "Радуга"'></a>
+					</div>
+					<div class="col-xs-7 col-sm-4 hidden-md hidden-lg tel-xs">
+						<p class="tel_head"><span class="img_telmenu"></span><a href="tel:74955100022" title="Позвонить">+7 (495) 510-00-22</a></p>
+					</div>
+					<div class="hidden-xs col-sm-6 col-md-4 col-md-offset-6 col-lg-4 col-lg-offset-6">
+						<div class="app-google">
+							<a href="https://www.apple.com/ios/app-store/" title="Скачать приложение на App Store" target="_blank"><img src="project/images/icon_apple.png" alt="App Store" title="App Store"></a>
+							<a href="https://play.google.com/store/apps" title="Скачать приложение в GooglePlay"><img src="project/images/icon_google.png" alt="GooglePlay" title="GooglePlay" target="_blank"></a>
+						</div>
+					</div>
+					<div class="navbar-default">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="navbar navbar-default menu-tel">
+				<div class="container center">
+					<div class="row menu-row">
+						<div class="col-md-9 col-lg-9">
+							<div class="collapse navbar-collapse" id="menu">
+								<ul class="nav navbar-nav">
+									<li><a href="project/page.html" class="first-li">Такси</a></li>
+									<li><a href="project/page.html">Аэропорты</a></li>
+									<li><a href="project/page.html">Вокзалы</a></li>
+									<li><a href="project/page.html">Межгород</a></li>
+									<li><a href="project/page.html">Грузоперевозки</a></li>
+									<li><a href="project/page.html">Микроавтобусы</a></li>
+									<li><a href="project/page.html">Автобусы</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="hidden-xs hidden-sm col-md-3">							
+							<p class="tel_menu"><span class="img_telmenu"></span><a href="tel:74955100022">+7 (495) 510-00-22</a></p>
+						</div>
+					</div>
+				</div>
+			</div>					
+		</div>		
+		<div class="bg-form">
+			<div class="container">
+				<h1><span>Комфортное и качественное</span><br>
+				такси "Радуга" для всей вашей семьи
+				</h1>
+				<p class="only">Только у нас вы можете выбрать как <span>фиксированный</span>, так и <span>повременной</span> тариф</p>
+				<form class="form" action="" method="">
+					<div class="row" >
+						<div class="col-xs-12 col-sm-8 col-md-3 tariff">
+							<p class="head_input">Выбор тарифа:</p>
+							<div class="bg-radio">
+								<input type="radio" name="tariff" class="radio-box" id="box1" checked>
+								<label class="box-label" for="box1">Фиксированный </label><br>
+							</div>
+							<div class="bg-radio">
+								<input type="radio" name="tariff" class="radio-box" id="box2">
+								<label class="box-label" for="box2">День повременной</label><br>
+							</div>
+							<div class="bg-radio">
+								<input type="radio" name="tariff" class="radio-box" id="box3">
+								<label class="box-label" for="box3">Ночь повременной</label>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-9">
+							<div class="row">
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<p class="head_input">Откуда:</p>
+									<p class="address-wrap"><input type="text" checked name="adress_from" class="address" placeholder="Улица / Дом"></p>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<p class="head_input">Куда:</p>
+									<p class="address-wrap"><input type="text"  name="address_to" class="address"  placeholder="Улица / Дом"></p>
+								</div>
+								<div class="col-xs-10 col-sm-6 col-md-4">
+									<p class="head_input">Время:</p>
+									<div class="row">
+										<div class="col-xs-4 col-sm-4 col-md-4 now">
+										<button class="button_now" name="now">Сейчас</button>
+										</div>
+										<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 later">
+										<input class="button_later" type="text" checked name="later" placeholder="Другое время">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs=12 col-sm-12 col-md-7">
+									<p class="service-wrap">
+									<select class="service">
+										<option>Услуги</option>
+										<option>Такси стандарт</option>
+										<option>Такси комфорт</option>
+										<option>Такси бизнес</option>
+										<option>Микроавтобус</option>
+										<option>Автобус</option>
+									</select>	
+									</p>									
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-5">
+									<p class="tel-wrap"><input type="tel" class="your_tel" name="telephone" placeholder="Ваш телефон"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-9">
+							<textarea class="comment" name="сomment" placeholder="Комментарий"></textarea>
+						</div>
+						<div class="col-xs-8 col-sm-4 col-md-3">
+							<input id="submit" type="submit" class="button_order" name="submit" value="Заказать >>">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-5 col-md-5">
+						
+							<div class="discount">
+								<div class="row discount-row">
+								<div class="col-xs-6 discount-left">-15%</div>
+								<div class="col-xs-6 discount-right">При заказе онлайн</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-7 col-md-7 col-lg-6 col-lg-offset-1 cards">
+							Возможность оплаты пластиковыми карточками:
+							<img src="project/images/visa.png" alt="viza">
+							<img src="project/images/master_card.png" alt="MasterCard">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+<!--------------     В ЧЕМ НАШИ ПРЕИМУЩЕСТВА   --------------------->
+		<div class="container advantages">
+			<h3 class="heading_dark">В чем наши преимущества?</h3>
+			<div class="line">
+				<div class="lines-circle"></div>
+			</div>
+			<p class="bg-heading">Наши преимущества</p>
+			<div class="row adv-content">
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="airport">
+					<p class="img-advantage img-airport"></p>
+					<p>Фиксированная цена в<br>аэропорт от <span>750 руб</span></p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="station">
+					<div class="img-advantage img-station"></div>
+					<p>Фиксированная цена на<br>вокзал от <span>550 руб</span></p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="adv-discount">
+					<div class="img-advantage img-discount"></div>
+					<p>Скидка при заказе<br>онлайн <span>15%</span></p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="mobile">
+						<div class="img-advantage img-mobile"></div>
+						<p>Заказ такси из<br>приложения <span>-15%</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--------------  /   В ЧЕМ НАШИ ПРЕИМУЩЕСТВА   --------------------->
+
+<!--------------  НАШИ ТАРИФЫ   --------------------->
+		<div class="bg-tariffs">
+			<div class="container">
+				<h3 class="heading_dark">Наши тарифы</h3>
+				<div class="line">
+					<div class="lines-circle"></div>
+				</div>
+				<p class="bg-heading">Наши тарифы</p>			
+				<div class="transports clearfix">
+					<div class="clearfix">
+						<div class="button-standart button clearfix">
+							<div class="standart-img transport-img">
+								<img class="checked" src="project/images/checked.png">
+							</div>
+							<div class="standart-text transport-text active">
+								<p class="type">Стандарт</p>
+								<hr>
+								<p class="brands">VW/POLO HYUNDAI/SOLARIS<br>KIA/RIO</p>
+							</div>
+						</div>
+						<div class="tariffs-inner clearfix active">
+							<p class="type_transport">Стандарт</p>
+							<p class="car_brand">VW/POLO HYUNDAI/SOLARIS KIA/RIO</p>
+							<img class="img_transport" src="project/images/standart-car.jpg" alt="">
+							<p class="rate_from"><span class="qq">от <span>120</span> руб.</span></p>
+							<p class="read_more"><a href="#">подробнее</a></p>						
+						</div>				
+						<div class="button-comfort button clearfix">
+							<div class="comfort-img transport-img">
+								<img class="not_checked" src="project/images/notchecked.png">
+							</div>
+							<div class="comfort-text transport-text">
+								<p class="type">Комфорт</p>
+								<hr>
+								<p class="brands">FORD/FOCUS CHEVROLET/CRUSE<br>HYUNDAI/I30</p>
+							</div>
+						</div>
+						<div class="tariffs-inner clearfix">
+							<p class="type_transport">Комфорт</p>
+							<p class="car_brand">FORD/FOCUS CHEVROLET/CRUSE HYUNDAI/I30</p>
+							<img class="img_transport" src="project/images/comfort-car.jpg" alt="">
+							<p class="rate_from"><span class="qq">от <span>150</span> руб.</span></p>
+							<p class="read_more"><a href="#">подробнее</a></p>						
+						</div>
+						<div class="button-business button clearfix">
+							<div class="business-img transport-img">
+								<img class="not_checked" src="project/images/notchecked.png">
+							</div>
+							<div class="business-text transport-text">
+								<p class="type">Бизнес</p>
+								<hr>
+								<p class="brands">TOYOTA/CAMRY MERСEDES</p>
+							</div>
+						</div>
+						<div class="tariffs-inner clearfix">
+							<p class="type_transport">Бизнес</p>
+							<p class="car_brand">TOYOTA/CAMRY MERСEDES</p>
+							<img class="img_transport" src="project/images/bussiness.jpg" alt="">
+							<p class="rate_from"><span class="qq">от <span>1500</span> руб.</span></p>
+							<p class="read_more"><a href="#">подробнее</a></p>						
+						</div>				
+						<div class="button-minivan button clearfix">
+							<div class="minivan-img transport-img">
+								<img class="not_checked" src="project/images/notchecked.png">
+							</div>
+							<div class="minivan-text transport-text">
+								<p class="type">Минивен</p>
+								<hr>
+								<p class="brands">VW TRANSPORTER/MULTIVAN/<br>CARAVELLE OPEL VIVARO</p>
+							</div>
+						</div>
+						<div class="tariffs-inner clearfix">
+							<p class="type_transport">Минивен</p>
+							<p class="car_brand">VW TRANSPORTER/MULTIVAN/CARAVELLE OPEL VIVARO</p>
+							<img class="img_transport" src="project/images/minivan.jpg" alt="">
+							<p class="rate_from"><span class="qq">от <span>1700</span> руб/2часа</span></p>
+							<p class="read_more"><a href="#">подробнее</a></p>						
+						</div>
+						<div class="button-minibus button clearfix">
+							<div class="minibus-img transport-img">
+								<img class="not_checked" src="project/images/notchecked.png">
+							</div>
+							<div class="minibus-text transport-text">
+								<p class="type">Микроавтобус</p>
+								<hr>
+								<p class="brands">MERСEDES/SPRINTER/VITO<br>HYUNDAI/STAREX</p>
+							</div>
+						</div>
+						<div class="tariffs-inner clearfix">
+							<p class="type_transport">Микроавтобус</p>
+							<p class="car_brand">MERСEDES/SPRINTER/VITO HYUNDAI/STAREX</p>
+							<img class="img_transport" src="project/images/minibus.jpg" alt="">
+							<p class="rate_from"><span class="qq">от <span>2490</span> руб/2часа</span></p>
+							<p class="read_more"><a href="#">подробнее</a></p>						
+						</div>		
+						<div class="button-bus button clearfix">
+							<div class="bus-img transport-img">
+								<img class="not_checked" src="project/images/notchecked.png">
+							</div>
+							<div class="bus-text transport-text">
+								<p class="type">Автобусы</p>
+								<hr>
+								<p class="brands">MERSEDES/HIGER/YUTONG</p>
+							</div>
+						</div>
+						<div class="tariffs-inner clearfix">
+							<p class="type_transport">Автобусы</p>
+							<p class="car_brand">MERSEDES/HIGER/YUTONG</p>
+							<img class="img_transport" src="project/images/bus.jpg" alt="">
+							<p class="rate_from"><span class="qq">от <span>1300</span> руб/час</span></p>
+							<p class="read_more"><a href="#">подробнее</a></p>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--------------  /   НАШИ ТАРИФЫ--------------------->		
+<!--------------  ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ   --------------------->
+		<div class="service_extra">
+			<div class="container">
+				<h3 class="heading_dark">Дополнительные услуги</h3>
+				<div class="line">
+					<div class="lines-circle"></div>
+				</div>
+				<p class="bg-heading">Дополнительные услуги</p>
+				<div class="row service_first_row">
+					<div class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-4 col-md-4 col-lg-offset-2 col-lg-3">					
+						<div class="img-extra img-chair"></div>
+						<hr>
+						<p class="name_service">Детское кресло<br>
+						<span>(по предварительномy заказу)</span>
+						</p>
+						<p class="cost_free">Бесплатно</p>					
+					</div>
+					<div class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3">						
+						<div class="img-extra img-animals"></div>
+						<hr>
+						<p class="name_service">Перевозка животных</p>
+						<p class="cost-wrap"><span class="cost"></span><span>100</span> руб.</p>
+					</div>
+					<div class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3">
+						<div class="img-extra img-car"></div>
+						<hr>
+						<p class="name_service">Кузов универсал</p>
+						<p class="cost-wrap"><span class="cost"></span><span>100</span> руб.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-4 col-md-4 col-lg-offset-2 col-lg-3">					
+						<div class="img-extra img-baggage"></div>
+						<hr>
+						<p class="name_service more_margin">Багаж в салоне</p>
+						<p class="cost-wrap"><span class="cost"></span><span>100</span> руб.</p>
+					</div>
+					<div class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3">						
+						<div class="img-extra img-tablet"></div>
+						<hr>
+						<p class="name_service">Встреча в аэропорту с<br> табличкой</p>
+						<p class="cost-wrap"><span class="cost"></span><span>100</span> руб.</p>
+					</div>
+					<div class="col-xs-offset-1 col-xs-11 col-sm-offset-0 col-sm-4 col-md-4 col-lg-3">
+						<div class="img-extra img-delivery"></div>						
+						<hr>
+						<p class="name_service">Помощь в доставке<br> багажа</p>
+						<p class="cost-wrap"><span class="cost"></span><span>100</span> руб.</p>						
+					</div>
+				</div>
+			</div>
+		</div>
+<!--------------  /ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ   --------------------->
+<!--------------  Footer   --------------------->
+		<div class="footer_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-2">
+						<a href="index.html"><img src="project/images/logo__bottom.png" alt='Логотип такси "Радуга"' title='Логотип такси "Радуга"'></a>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-2">
+						<div class="email">
+							<h3>email:</h3>
+							<a href="mailto:taxi5100022@mail.ru" class="email_address" title="Написать письмо">taxi5100022@mail.ru</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<div class="tel_footer">
+							<h3>телефоны:</h3>
+							<p>
+								<a href="tel:+74955100022" title="Позвонить">+7 (495) 510-00-22</a><br>
+								<a href="tel:+79645100022" title="Позвонить">+7 (964) 510-00-22</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-3">
+						<div class="tel_free">
+							<h3>бесплатный телефон:</h3>
+							<p><a href="tel:+74995009477" title="Позвонить">+7 (499) 500-94-77</a></p>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-2">
+						<div class="scanner">
+							<img src="project/images/scanner.jpg" alt="Сканер" alt="title">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<p class="social"><span>Мы в соц. сетях:</span>
+							<a href="https://www.facebook.com" title="facebook" target="_blank"><span class="icon-social img-facebook"></span></a>
+							<a href="https://twitter.com/?lang=ru" title="twitter" target="_blank"><span class="icon-social img-twitter"></span></a>
+							<a href="https://vk.com" title="ВКонтакте" target="_blank"><span class="icon-social img-vk"></span></a>
+							<a href="https://gsuite.google.ru/intl/ru/products/googleplus/" title="Google+" target="_blank"><span class="icon-social img-google"></span></a>
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<p class="copyright">&copy; 2018 Такси &quot;Радуга&quot;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--------------  /   footer   --------------------->	
+	<div id="back" class="back">
+		<div class="exit"><i class="fas fa-times-circle"></i></div>
+		<div class="success">
+			<p>Спасибо, Ваш заказ принят!</p>
+			<p>Машина выезжает!</p>
+		</div>		
+		<img class="taxi taxi7-static" src="project/images/taxi7.png">
+		<img class="taxi taxi2-static" src="project/images/taxi2.png">
+		<img class="taxi taxi3-static" src="project/images/taxi5.png">
+		<img class="taxi taxi4-static" src="project/images/taxi4.png" width="270" height="135">
+		<img class="taxi taxi5-static" src="project/images/taxi3.png">
+	</div>
+	<script src="project/js/jquery-3.2.1.min.js"></script>
+	<script src="project/js/bootstrap.min.js"></script>
+	<script src="project/js/main.js"></script>
+  </body>
+</html>
